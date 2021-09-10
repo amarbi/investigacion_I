@@ -14,7 +14,7 @@ Una vez el entorno esté cargado puede seleccionar el script que desee ejecutar.
 
 |**Tema** |**Datos**|**Scripts**|
 |:--- |:--- |:--- |
-
+1. Análisis Descriptivo | |
 
  **NOTA**:
   Tenga en cuenta que la primera vez que crea el entorno puede tardar varios minutos. 
