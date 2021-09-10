@@ -10,7 +10,7 @@ Puede ejecutar los scripts del curso remotamente haciendo click en alguno de los
 
 * Ejecutar *scripts* con R Studio: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/amarbi/investigacion_I/main?urlpath=rstudio)
 
-Una vez el entorno esté cargado puede seleccionar el script o notebook que desee ejecutar. Las carpetas de datos y scripts se habilitaran el dia de la clase.
+Una vez el entorno esté cargado puede seleccionar el script que desee ejecutar. Las carpetas de datos y scripts se habilitaran el dia de la clase.
 
 |**Tema** |**Datos**| **Notebook**  |**Scripts**|
 |:--- |:--- |:--- |:---|
