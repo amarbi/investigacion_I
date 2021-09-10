@@ -14,8 +14,8 @@ Una vez el entorno esté cargado puede seleccionar el script que desee ejecutar.
 
 |**Tema** |**Datos**|**Scripts**|
 |:--- |:--- |:--- |
-|1. Análisis Descriptivo| datos/clase_1 ||
-|||scripts/clase_1|
+|1. Análisis Descriptivo| datos/clase_1 |scripts/clase_1|
+||||
 | | | |
 
 
