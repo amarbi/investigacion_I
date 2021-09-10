@@ -20,5 +20,5 @@ Una vez el entorno esté cargado puede seleccionar el script que desee ejecutar.
 
 
  **NOTA**:
-  Tenga en cuenta que la primera vez que crea el entorno puede tardar varios minutos. 
+  Tenga en cuenta que la primera vez que crea el entorno puede tardar varios minutos. **Asegurese de tener el entorno listo antes del inicio de la clase**.
 
