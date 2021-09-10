@@ -12,8 +12,8 @@ Puede ejecutar los scripts del curso remotamente haciendo click en alguno de los
 
 Una vez el entorno esté cargado puede seleccionar el script que desee ejecutar. Las carpetas de datos y scripts se habilitaran el dia de la clase.
 
-|**Tema** |**Datos**| **Notebook**  |**Scripts**|
-|:--- |:--- |:--- |:---|
+|**Tema** |**Datos**|**Scripts**|
+|:--- |:--- |:--- |
 
 
  **NOTA**:
