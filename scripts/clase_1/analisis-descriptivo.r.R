@@ -6,13 +6,17 @@
 ### 1.1.Definir carpeta de trabajo
 ################################################################################
 
-getwd()  #Devuelve el directorio("la ruta")desde donde R est� trabajando en la sesi�n actual
+getwd()  #Devuelve el directorio("la ruta")desde donde R esta trabajando en la sesi�n actual
+setwd("../../") 
+getwd()
+setwd("datos/clase_1") 
+getwd()
 
 ################################################################################
 ### 1.2.Instalar y cargar paquetes ("librerias")
 ################################################################################
 
-install.packages("tidyverse") #Instala el paquete, se hace s�lo una vez
+install.packages("tidyverse") #Instala el paquete, se hace solo una vez
 library(tidyverse) #cargar el paquete para que este disponible
 
 ################################################################################
@@ -26,14 +30,13 @@ head(paquetes$info[[2]])
 ### 1.3.2. importar datos desde Excel
 install.packages("readxl")
 library(readxl) 
-ruta_datos<-"" 
-setwd("datos/clase_1")            
+           
 d2<-read_excel("ejemplo2.xlsx", sheet=1)# carga hoja1 del libro de excel
 d2
 View(d2) #vista de los datos
-dim(d2)  #dimensi�n
+dim(d2)  #dimension
 
-d3 <- read_excel(paste(ruta_datos,"ejemplo2.xlsx"), sheet=2 )
+d3 <- read_excel("ejemplo2.xlsx", sheet=2 )
 d3
 View(d3)
 dim(d3)
@@ -41,7 +44,7 @@ dim(d3)
 ### 1.3.3. importar datos en formato csv (comma separated values)
 install.packages("readr")
 library(readr)             
-d1<-read.table(file =paste(ruta_datos,"ejemplo1.csv"), header=T,sep=",")
+d1<-read.table(file ="ejemplo1.csv", header=T,sep=",")
 d1
 View(d1) #vista de los datos
 dim (d1) #dimensi�n
@@ -61,7 +64,7 @@ mean(x)
 mean(x,na.rm =T)  #calcula la funcion sin los missings
 
 ##missing en un conjunto de datos
-d4 <- read_excel("D:/UELBOSQUE/MAESTRIA IBM 20211/2021-2/Pr�ctica Estad�stica Descriptiva/ejemplo3.xlsx", sheet=1)
+d4 <- read_excel("ejemplo3.xlsx", sheet=1)
 d4
 str(d4)            #Descripci�n del tipo de datos
 any(is.na(d4))     #nos indica si hay missings
@@ -94,7 +97,7 @@ rank(x)
 ################################################################################
 
 ###1.6.1.Cargar archivo Bajo peso al nacer
-Bajopeso<-read.csv(file ="D:/UELBOSQUE/MAESTRIA IBM 20211/2021-2/Pr�ctica Estad�stica Descriptiva/Bajopeso.csv", header=T)
+Bajopeso<-read.csv(file ="Bajopeso.csv", header=T)
 Bajopeso
 str(Bajopeso)
 
@@ -127,8 +130,8 @@ Bajopeso$diabetes <- factor(Bajopeso$diabetes)
 levels(Bajopeso$bajo_pes) <- c("Normal","Bajo Peso")
 levels(Bajopeso$raza)     <- c("Mestizo","Blanco","Afro")
 levels(Bajopeso$fumador)  <- c("si","no")
-levels(Bajopeso$part_pre) <- c("pret�rmino","a t�rmino","t�rmino tard�o","post�rmino")
-levels(Bajopeso$niveledu) <- c("primaria" ,"secundaria","universitaria","postgrado","t�cnico","ninguna")
+levels(Bajopeso$part_pre) <- c("pretermino","a termino","termino tardio","postermino")
+levels(Bajopeso$niveledu) <- c("primaria" ,"secundaria","universitaria","postgrado","tecnico","ninguna")
 
 ###1.6.5.Llamar una variable
 Bajopeso$bajo_pes
@@ -284,6 +287,7 @@ plot(Bajopeso$edad,Bajopeso$pesom, main="Grafico edad vs peso de la madre",xlab=
 hist(Bajopeso$edad,main="Histograma edad de la madre",xlab="Edad",ylab="frecuencia")
 hist(Bajopeso$pesom,main="Histograma peso",xlab="Peso",ylab="frecuencia")
 boxplot(Bajopeso$edad,main="Edad de la madre")
+
 
 
 
